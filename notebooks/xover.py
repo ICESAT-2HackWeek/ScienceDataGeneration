@@ -737,7 +737,7 @@ def main(ifile1, ifile2):
                 out.append(out_i)
                 
         # Operating on current tile
-        print('tile:', ki, len(ibox))
+        # print('tile:', ki, len(ibox))
 
         # Update counter
         ki += 1

@@ -43,7 +43,8 @@ Credits:
  
     Jet Propulsion Laboratory, California Institute of Technology
 """
-
+import warnings
+warnings.filterwarnings("ignore")
 import h5py
 import pyproj
 import numpy as np
