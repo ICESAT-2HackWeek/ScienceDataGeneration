@@ -17,6 +17,8 @@ Use case:
     python merge.py '/mnt/devon-r0/shared_data/ers/floating_/latest/*_ICE_*_A_*.h5' -o /mnt/devon-r0/shared_data/ers/floating_/latest/AntIS_ERS2_ICE_READ_A_ROSS_RM_IBE.h5 -m 8 -n 8
 
 """
+import warnings
+warnings.filterwarnings("ignore")
 import os
 import sys
 import h5py

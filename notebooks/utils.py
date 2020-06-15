@@ -346,7 +346,7 @@ def spatial_filter(x, y, z, dx, dy, n_sigma=3.0):
     Nn = int((np.abs(y.max() - y.min())) / dy) + 1
     Ne = int((np.abs(x.max() - x.min())) / dx) + 1
 
-    f_bin = stats.binned_statistic_2d(x, y, z, bins=(Ne, Nn))
+    f_bin = stats.binned_statistic_2d(x, y, x, bins=(Ne, Nn))
 
     index = f_bin.binnumber
 
